@@ -1,0 +1,405 @@
+$htmlWidth: 100%
+
+@mixin flexRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    flex-wrap: nowrap
+    position: relative
+
+@mixin flexColumn
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    flex-wrap: nowrap
+    position: relative
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0 auto
+    outline: none
+    font-family: Arial, Helvetica, sans-serif
+    user-select: none
+
+a
+    text-decoration: none
+    color: inherit
+    &:hover
+        color: inherit
+    &:visited
+        color: inherit
+    &:active
+        color: inherit
+
+html, body
+    width: $htmlWidth
+    height: 100%
+
+main
+    width: 90%
+    margin-top: 76px
+    p, button, h3
+        color: #fff
+        font-family: 'SF Regular'
+
+button
+    border: none
+    background: transparent
+    padding-left: 0
+    margin-left: 0
+    cursor: pointer
+
+header
+    width: 100%
+    height: 106px
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: center
+    h3
+        font-family: "SF Regular"
+        font-style: normal
+        font-weight: 800
+        font-size: 34.63px
+        line-height: 41px
+        color: #3B4453
+    input
+        border: none
+        background: #F4F7FB
+        border-radius: 11px
+        width: 440px
+        height: 40px
+        line-height: 40px
+        padding-left: 18px
+
+p
+    font-family: "SF Regular"
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #3B4453
+
+.header-info
+    background: #F4F7FB
+    height: 40px
+    margin: 0
+    p
+        color: #A5AABE
+        font-size: 12px
+        line-height: 14px
+
+    a
+        margin: 0 11px
+
+.block
+    width: 100%
+    position: relative
+    margin: 0 100px
+
+.header-main
+    height: 66px
+
+.row
+    @include flexRow
+
+.column
+    @include flexColumn
+
+.contact
+    margin-right: 100px
+
+.info
+    margin-left: 100px
+    p
+        margin: 0 11px
+
+.blue
+    background: #466FFF
+    border-radius: 11px
+    color: #fff
+
+.orange
+    background: #FFA15D
+    border-radius: 11px
+    color: #fff
+
+.marked
+    width: 150px
+    height: 40px
+    border-radius: 11px
+
+.main-clients
+    a
+        margin: 0 17px
+
+.main-search
+    position: relative
+    img
+        position: absolute
+        top: 50%
+        right: 20px
+        transform: translate(0, -50%)
+
+.heading
+    font-family: 'SF Regular'
+    font-style: normal
+    font-weight: 700
+    font-size: 26px
+    line-height: 31px
+    color: #3B4453
+
+.user-login
+    width: 50px
+    font-family: "SF Regular"
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #3B4453
+    margin-left: 15px
+    button, img
+        margin: 0
+
+.main-content
+    margin: 0 auto
+
+.content-banner
+    width: 1160px
+    height: 400px
+    h3
+        font-style: normal
+        font-weight: 800
+        font-size: 55px
+        line-height: 49px
+        width: 670px
+        height: 150px
+        margin-left: 60px
+
+.banner-actions
+    margin-left: 60px
+    margin-top: 60px
+    width: 315px
+
+.dashed
+    border-bottom: 1px dashed #fff
+
+.banner-action
+    width: 168px
+    height: 55px
+    font-weight: 700
+    font-size: 16px
+    line-height: 19px
+
+.customer
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 19px
+
+.banner-bg
+    position: absolute
+    top: -65px
+    right: -130px
+
+.content-categories
+    margin-top: 21px
+
+.category
+    width: 280px
+    height: 80px
+    background: #F4F7FB
+    border-radius: 20px
+    padding: 0 30px
+    margin: 0 7px
+    &:first-child
+        p
+            margin-left: 22px
+        img
+            margin-right: 22px
+    p
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        color: #3B4453
+
+.main-categories
+    margin-top: 90px
+    h3, p
+        color: #3B4453
+        margin-left: 0
+    .item-heading
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        letter-spacing: 0.06em
+        color: #A5AABE
+
+.categories-list
+    width: 100%
+    margin-top: 60px
+
+.item-list
+    margin-top: 23px
+    margin-bottom: 48px
+
+.main-discounts
+    width: 1160px
+    height: 180px
+    background: #FFF7F1
+    border-radius: 30px
+    margin-top: 125px
+    h3, p
+        color: #3B4453
+        margin-left: 0
+    p
+        font-weight: 400
+        font-size: 16px
+        line-height: 30px
+
+    span
+        border-radius: 3px
+        padding: 2px 6px 3px 10px
+        font-weight: 700
+        font-size: 14.6087px
+        line-height: 17px
+        letter-spacing: 0.01em
+        margin-left: 12px
+
+.secondary
+    margin-right: 0
+    font-weight: 800
+    font-size: 36px
+    line-height: 47px
+    color: #3B4453
+    margin-left: 0
+
+.discounts-desc
+    margin-left: 60px
+
+.discounts-bg
+    position: absolute
+    bottom: 0
+    right: 0
+
+.main-news
+    margin-top: 94px
+    img
+        margin-top: 5px
+    h3
+        margin-left: 0
+    p
+        font-weight: 700
+        font-size: 16px
+        line-height: 20px
+        color: #3B4453
+        max-width: 260px
+        margin-top: 23px
+    span
+        margin-top: 17px
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+        color: #A5AABE
+        text-align: left
+        margin-left: 0
+
+.news-items
+    margin-top: 46px
+    flex-wrap: wrap
+
+.main-clients
+    .clients
+        margin-top: 65px
+        flex-wrap: wrap
+
+.main-register
+    background: #F4F7FB
+    border-radius: 30px
+    width: 1160px
+    height: 330px
+    margin-top: 120px
+    button
+        margin-top: 48px
+    h3
+        font-size: 39px
+
+.register-content
+    margin-left: 40px
+    margin-right: 0
+    button
+        width: 217px
+        height: 55px
+
+.register-bg
+    margin-left: 75px
+    .blue, .orange
+        padding: 12px
+        top: 8px
+        left: 15px
+    img
+        position: absolute
+
+.hand
+    top: -130px
+    right: -50px
+
+.reg-block
+    width: 240px
+    height: 65px
+    background: rgba(255, 255, 255, 0.5)
+    backdrop-filter: blur(23px)
+    border-radius: 14px
+    position: relative
+    p
+        font-weight: 400
+        font-size: 11.907px
+        line-height: 15px
+        color: #3B4453
+        padding: 15px 0 0 80px
+
+.premium
+    margin-left: 100%
+    margin-top: 15px
+
+footer
+    width: 90%
+    height: 300px
+    border-top: 1px dashed #BFC6CE
+    margin-top: 130px
+    @include flexRow
+    align-items: baseline
+    padding-top: 56px
+    h3
+        font-weight: 800
+        font-size: 36.7288px
+        line-height: 44px
+        color: #3B4453
+    .secondary
+        font-weight: 700
+        font-size: 16px
+        line-height: 18px
+
+.footer-categories
+    flex-wrap: wrap
+    width: 350px
+    margin-top: 0
+    margin-left: 84px
+    p
+        margin: 5px 40px
+
+.politics
+    position: absolute
+    left: 120px
+    bottom: 41px
+    font-weight: 400
+    font-size: 12px
+    line-height: 14px
+    color: #A5AABE
+
+@media all and (max-width: 1920px)
+    .banner-bg
+        right: 0px
